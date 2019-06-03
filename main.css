@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*My styling*/
+body{
+  margin: 5px 25px;
+
+
+}
+#navbar ul{
+  overflow: hidden;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+ #navbar li{
+  float: left;
+  padding-right: 20px;
+
+
+}
+#navbar .right-nav{
+  float: right;
+}
+ #navbar li a{
+  display: block;
+  color: rgb(100, 99, 99);
+  font-family: Arial;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+
+}
+
+ .hover:hover{
+  text-decoration: underline;
+}
+#navbar .right-nav link i{
+  padding: 0;
+}
+#navbar .app-icon{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: rgb(34, 31, 31); 
+}
+#navbar i:hover{
+  color: rgb(0, 0, 0);
+}
+
+#navbar .sign-in{
+  padding: 10px 15px; 
+  font-weight: bold;
+  color: white;
+  background-color:rgb(56, 142, 212);
+  border-radius: 2px;
+}
+#navbar .link{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#logo{
+  width: 100%;
+  text-align: center;
+  margin-top: 135px;
+}
+
+#searchbar input[type="text"] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 45px;
+  width: 580px;
+  padding: 0 30px;
+  border-radius: 60px;
+  border-style: none;
+  box-shadow: 1px 1px 6px rgb(139, 139, 139);
+ 
+}
+#searchbar #buttons{
+  text-align: center;
+  margin-top: 30px;
+}
+#searchbar #buttons input[type="submit"] {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: rgb(240, 238, 238);
+  color: rgb(78, 78, 78);
+}
+footer{
+  position: absolute;
+  margin-top: 180px;
+  height: 40px;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(240, 238, 238); 
+}
+footer ul{
+  overflow: hidden;
+  padding: 15px 0 10px 20px;
+}
+
+footer ul li{
+  float: left;
+  padding-right: 20px;
+}
+
+footer .right-nav{
+  float: right;
+}
+footer li a{
+  display: block;
+  color: rgb(100, 99, 99);
+  font-family: Arial;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
