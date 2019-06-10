@@ -46,8 +46,48 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*hi*/
+
 /*My styling*/
+/*********************/
+/*Search Bar*/
+nav {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  border-bottom: 1px solid rgba(220,220,220);
+}
+nav #search-bar{
+  display: flex;
+  margin: 22px 0 0 0;
+}
+
+nav #logo{
+  object-fit: contain;
+  width: 92px;
+  height: 33px;
+  padding: 4px 28px 0 30px;
+}
+nav #search-bar input[type="text"] {
+  height: 45px;
+  width: 580px;
+  padding: 0 40px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 60px;
+}
+/*Search Bar*/
+/*********************/
+/*Links below Search Bar*/
+nav #links ul{
+  padding-left: 150px;
+}
+nav #links ul li{
+  float: left;
+  padding: 20px 15px;
+}
+nav #links ul li:nth-last-child(2){
+  padding-left: 50px;
+}
+/*Links below Search Bar*/
+/*********************/
 
 
 
