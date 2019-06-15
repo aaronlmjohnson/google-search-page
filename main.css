@@ -57,7 +57,7 @@ body{
 nav {
   display: grid;
   grid-template-rows: 50% 50%;
-  grid-template-columns: 5% 80% 15%;
+  grid-template-columns: minmax(auto,5%) minmax(700px,80%) minmax(150px,15%);
   border-bottom: 1px solid rgba(220,220,220);
 }
 /*nav #search-bar{
@@ -151,8 +151,9 @@ nav #links ul li:nth-last-child(2){
 /*Results*/
 #results{
   display: grid;
-  grid-template-columns: 7% 33% 60%;
+  grid-template-columns: minmax(100px,6%) minmax(620px,34%) 60%;
   padding: 15px 7px;
+  margin-left: 10px;
 }
 #result-num{
   padding-bottom: 20px;
@@ -197,7 +198,7 @@ nav #links ul li:nth-last-child(2){
   border: 1px solid rgb(230, 230, 230);
   border-radius: 10px;
   grid-column: span 2;
-  margin-left: 118px;
+  margin-left: 12%;
   margin-bottom: 30px;
   padding: 10px 10px 15px 10px;
 }
@@ -245,7 +246,25 @@ nav #links ul li:nth-last-child(2){
   width: 72px;
   height: 72px;
 }
+/*Related Searches*/
+/*********************/
+/*Page-Nav Bar*/
+#page-nav{
 
+}
+#page-nav #nav-google .nav-letter{
+  
+}
+#page-nav .nav-letter{
+  width: 40px;
+}
+#page-nav .nav-letter img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: top left;
+
+}
 
 
 
