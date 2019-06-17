@@ -51,6 +51,7 @@ table {
 body{
   padding: 26px 26px 26px 29px;
   font-family: 'Roboto', arial, sans-serif;
+  position: relative;
 }
 /*********************/
 /*Search Bar*/
@@ -60,17 +61,6 @@ nav {
   grid-template-columns: minmax(auto,5%) minmax(700px,80%) minmax(150px,15%);
   border-bottom: 1px solid rgba(220,220,220);
 }
-/*nav #search-bar{
-  margin: 22px 30px 0 0;0
-}
-nav #search-bar ul li{
-  float: left;
-}
-nav #search-bar ul li:nth-last-child(2), nav #search-bar ul li:last-child{
-  float: right;
-}*/
-
-
 nav #logo{
   grid-row: 1;
   grid-column: 1;
@@ -178,10 +168,16 @@ nav #links ul li:nth-last-child(2){
   text-decoration: none;
   color: rgb(0, 18, 180);
 }
+
 #results .result a p{
   font-size: 14px;
   color: rgb(0, 104, 0);
 }
+
+#results .result a h1:hover{
+  text-decoration: underline;
+}
+
 #results .result a p i{
   font-size: 20px;
 }
@@ -221,12 +217,10 @@ nav #links ul li:nth-last-child(2){
   color: black;
 }
 
-
 .related-searches .related-search a p{
   text-decoration: none;
   color: blue;
 }
-
 
 .related-searches #odin{
   object-fit: cover;
@@ -250,154 +244,103 @@ nav #links ul li:nth-last-child(2){
 /*********************/
 /*Page-Nav Bar*/
 #page-nav{
-
+  grid-column: 2;
+  padding-left: 150px;
+  margin-bottom: 60px;
 }
-#page-nav #nav-google .nav-letter{
+#page-nav #g-letter{
+  display: inline-block;
+  width: 28px;
+  height: 52px;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+
+#page-nav .letter-container{
+  display: inline-block;
+  margin-left: -4px;
+  text-align: center;
+  font-family: 'Roboto', arial, sans-serif;
   
 }
-#page-nav .nav-letter{
-  width: 40px;
-}
-#page-nav .nav-letter img{
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  object-position: top left;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body{
-  margin: 5px 25px;
-
-
-}
-#navbar ul{
-  overflow: hidden;
-  font-size: 12px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
- #navbar li{
-  float: left;
-  padding-right: 20px;
-
-
-}
-#navbar .right-nav{
-  float: right;
-}
- #navbar li a{
-  display: block;
-  color: rgb(100, 99, 99);
-  font-family: Arial;
-  text-align: center;
+#page-nav .letter-container a{
   text-decoration: none;
-  letter-spacing: 0.2px;
-
+  color: #4285f4;
 }
-
- .hover:hover{
+#page-nav .letter-container a:hover{
   text-decoration: underline;
 }
-#navbar .right-nav link i{
-  padding: 0;
-}
-#navbar .app-icon{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: rgb(34, 31, 31); 
-}
-#navbar i:hover{
-  color: rgb(0, 0, 0);
-}
-
-#navbar .sign-in{
-  padding: 10px 15px; 
-  font-weight: bold;
-  color: white;
-  background-color:rgb(56, 142, 212);
-  border-radius: 2px;
-}
-#navbar .link{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#logo{
-  width: 100%;
-  text-align: center;
-  margin-top: 135px;
-}
-
-#searchbar input[type="text"] {
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  height: 45px;
-  width: 580px;
-  padding: 0 30px;
-  border-radius: 60px;
-  border-style: none;
-  box-shadow: 1px 1px 6px rgb(139, 139, 139);
- 
-}
-#searchbar #buttons{
-  text-align: center;
-  margin-top: 30px;
-}
-#searchbar #buttons input[type="submit"] {
-  padding: 10px 15px;
-  margin: 0 5px;
-  border: none;
-  background-color: rgb(240, 238, 238);
-  color: rgb(78, 78, 78);
-}
-footer{
-  position: absolute;
-  margin-top: 180px;
+#page-nav #o-crop-selected, #page-nav #o-crop{
+  display: inline-block;
+  width: 20px;
   height: 40px;
-  width: 100%;
-  right: 0;
+  overflow: hidden;
+}
+#page-nav #gle-crop{
+  display: inline-block;
+  width: 71px;
+  height: 40px;
+  overflow: hidden;
+}
+#page-nav #g-letter img{
+  object-position: none;
+  object-position: -24px 0;
+  
+}
+#page-nav #o-crop-selected img{
+  object-position: none;
+  object-position: -53px 0;
+}
+#page-nav #o-crop img{
+  object-position: none;
+  object-position: -73px 0;
+}
+#page-nav #gle-crop img{
+  object-position: none;
+  object-position: -96px 0;
+}
+#page-nav .gle{
+  text-align: right;
+}
+
+/*Page-Nav Bar*/
+/*********************/
+/*Footer*/
+footer{
+  background-color: #f2f2f2;
+  color: #222;
+  position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgb(240, 238, 238); 
+  width: 100%;
+  padding-left: 150px;
+  height: 60px;
 }
-footer ul{
-  overflow: hidden;
-  padding: 15px 0 10px 20px;
+footer p{
+  font-weight: bold;
+  font-size: 12px;
 }
-
+footer p a, footer ul li a{
+  font-weight: normal;
+  text-decoration: none;
+  color: #5f6368;
+}
+footer ul li a:hover{
+  color: black;
+}
+footer p a:hover{
+  color: black;
+}
+footer .material-icons{
+  font-size: 12px;
+  padding-right: 3px;
+  color: #9e9e9e;;
+}
 footer ul li{
   float: left;
-  padding-right: 20px;
-}
-
-footer .right-nav{
-  float: right;
-}
-footer li a{
-  display: block;
-  color: rgb(100, 99, 99);
-  font-family: Arial;
+  padding: 20px 30px 10px 0;
   font-size: 12px;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 0.2px;
+
 }
-*/
+/*Footer*/
+/*********************/
